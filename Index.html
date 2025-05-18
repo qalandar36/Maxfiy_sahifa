@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Kirish sahifasi</title>
+    <script>
+        function tekshir() {
+            var kod = document.getElementById("kod").value;
+            if (kod === "1234kod@@@") {
+                window.location.href = "maxfiy.html";
+            } else {
+                alert("Noto‘g‘ri kod!");
+            }
+        }
+    </script>
+</head>
+<body style="text-align:center; margin-top:100px;">
+    <h2>Maxfiy sahifaga kirish uchun kodni kiriting:</h2>
+    <input type="password" id="kod" placeholder="Kod kiriting"><br><br>
+    <button onclick="tekshir()">Kirish</button>
+</body>
+</html><!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Maxfiy sahifa</title>
+</head>
+<body style="text-align:center; margin-top:100px;">
+    <h1>Tabriklaymiz!</h1>
+    <p>Siz to‘g‘ri kod kiritdingiz va maxfiy sahifaga kirdingiz!</p>
+</body>
+</html>
